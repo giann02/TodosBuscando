@@ -1,6 +1,6 @@
 # TodosBuscando
 
-Plataforma comunitaria de alertas para la búsqueda de personas desaparecidas. Permite publicar alertas, notificar vecinos cercanos por email, recibir reportes de avistamientos y visualizar la trayectoria probable de la persona en un mapa.
+Plataforma comunitaria de alertas para la búsqueda de personas desaparecidas. Permite publicar alertas, notificar vecinos cercanos por email, recibir reportes de avistamientos y visualizar la trayectoria probable de la persona en un mapa
 
 ---
 
