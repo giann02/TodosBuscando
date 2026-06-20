@@ -1,0 +1,35 @@
+services:
+
+  mongodb:
+    image: mongo:7
+    container_name: todos-mongodb
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: todosbuscando
+    volumes:
+      - mongodb_data:/data/db
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    container_name: todos-redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  neo4j:
+    image: neo4j:5
+    container_name: todos-neo4j
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    environment:
+      NEO4J_AUTH: neo4j/todos1234
+    volumes:
+      - neo4j_data:/data
+    restart: unless-stopped
+
+volumes:
+  neo4j_data:
+  mongodb_data:
